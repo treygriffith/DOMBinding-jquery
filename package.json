@@ -5,14 +5,14 @@
 	"main": "./index.js",
 	"keywords": [
 		"BoltJS",
-		"jquery",
+		"jQuery",
 		"DOMBinding",
 		"DOM",
 		"manipulation",
 		"Joules"
 	],
 	"dependencies": {
-		"jquery-joules": "*"
+		"jquery-joules": "1.9.1"
 	},
 	"devDependencies": {
 		"jmocha": "0.0.2"
