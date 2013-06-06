@@ -1,0 +1,20 @@
+{
+	"name":"DOMBinding-jquery",
+	"version": "0.0.1",
+	"description": "Simplified DOM manipulation driver for BoltJS using jQuery.",
+	"main": "./index.js",
+	"keywords": [
+		"BoltJS",
+		"jquery",
+		"DOMBinding",
+		"DOM",
+		"manipulation",
+		"Joules"
+	],
+	"dependencies": {
+		"jquery-joules": "*"
+	},
+	"devDependencies": {
+		"jmocha": "0.0.2"
+	}
+}
