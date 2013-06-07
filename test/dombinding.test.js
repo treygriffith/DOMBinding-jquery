@@ -454,4 +454,18 @@ describe("Events", function() {
 
 	});
 
+	it("emits events manually", function(done) {
+
+		var div = new DOMBinding("<div></div>");
+
+		div.on('click', function() {
+
+			assert.strictEqual(div, this);
+
+			done();
+		});
+
+		div.emit('click');
+	});
+
 });
