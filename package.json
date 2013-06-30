@@ -1,6 +1,6 @@
 {
 	"name":"dombinding-jquery",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Simplified DOM manipulation driver for BoltJS using jQuery.",
 	"main": "./index.js",
 	"keywords": [
