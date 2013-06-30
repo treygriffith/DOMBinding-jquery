@@ -65,7 +65,7 @@ describe('Attribute Manipulation', function() {
 
 		var db = new DOMBinding("<div id='"+id+"'></div>");
 
-		assert.strictEqual(db.getAttr('id'), id);
+		assert.strictEqual(db.getProp('id'), id);
 	});
 
 	it('changes attribute values', function() {
@@ -74,9 +74,9 @@ describe('Attribute Manipulation', function() {
 
 		var db = new DOMBinding("<div id='old_id'></div>");
 
-		db.setAttr('id', new_id);
+		db.setProp('id', new_id);
 
-		assert.strictEqual(db.getAttr('id'), new_id);
+		assert.strictEqual(db.getProp('id'), new_id);
 	});
 });
 
