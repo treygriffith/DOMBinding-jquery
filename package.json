@@ -1,10 +1,10 @@
 {
 	"name":"dombinding-jquery",
-	"version": "0.0.3",
-	"description": "Simplified DOM manipulation driver for BoltJS using jQuery.",
+	"version": "0.0.4",
+	"description": "Simplified DOM manipulation driver for Refract using jQuery.",
 	"main": "./index.js",
 	"keywords": [
-		"BoltJS",
+		"refract",
 		"jQuery",
 		"DOMBinding",
 		"DOM",
