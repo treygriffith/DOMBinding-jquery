@@ -468,4 +468,35 @@ describe("Events", function() {
 		div.emit('click');
 	});
 
+	it("fires event handlers after being removed and re-added", function(done) {
+
+		var div = new DOMBinding("<div></div>");
+
+		div.on('click', function() {
+
+			assert.strictEqual(div, this);
+
+			done();
+		});
+
+		var body = new DOMBinding(window.document.body);
+
+		body.append(div);
+
+		assert.ok(div.inDOM());
+
+		div.remove();
+
+		assert.notOk(div.inDOM());
+
+		body.append(div);
+
+		assert.ok(div.inDOM());
+
+		var evt = document.createEvent("MouseEvents");
+		evt.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+
+		div.getDOM().dispatchEvent(evt);		
+	});
+
 });
