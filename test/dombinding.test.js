@@ -78,6 +78,17 @@ describe('Attribute Manipulation', function() {
 
 		assert.strictEqual(db.getProp('id'), new_id);
 	});
+
+	it('changes arbitrary attributes', function() {
+
+		var new_arb = 'arbor day';
+
+		var db = new DOMBinding("<div arb='flagday'></div>");
+
+		db.setProp('arb', 'arbor day');
+
+		assert.strictEqual(db.getProp('arb'), new_arb);
+	});
 });
 
 describe('Text Manipulation', function() {

@@ -1,6 +1,6 @@
 {
 	"name":"dombinding-jquery",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Simplified DOM manipulation driver for Refract using jQuery.",
 	"main": "./index.js",
 	"keywords": [
